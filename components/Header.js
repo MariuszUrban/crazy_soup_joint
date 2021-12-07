@@ -38,7 +38,7 @@ const Header = () => {
         {user ? (
           <Link href="/account">
             <a>
-              <img src="/profile.png" alt={user.email} />
+              <Image width={16} src="/profile.png" alt={user.email} />
             </a>
           </Link>
         ) : (
