@@ -22,7 +22,7 @@ export default function Home({ products }) {
                   <div className={styles.product__ColImg}>
                     <Image
                       width={100}
-                      src={fromImageToUrl(product.image)}
+                      loader={fromImageToUrl(product.image)}
                       alt="image of a soup"
                     />
                   </div>

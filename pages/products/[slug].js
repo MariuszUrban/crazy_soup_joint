@@ -17,7 +17,7 @@ const Product = ({ product }) => {
       <Image
         intrinsic
         width={300}
-        src={fromImageToUrl(product.image)}
+        loader={fromImageToUrl(product.image)}
         alt="image product"
       />
       <h3>{product.name}</h3>
