@@ -20,7 +20,7 @@ export default function Home({ products }) {
               <a>
                 <div className={styles.product__Row}>
                   <div className={styles.product__ColImg}>
-                    <img
+                    <Image
                       src={fromImageToUrl(product.image)}
                       alt="image of a soup"
                     />
