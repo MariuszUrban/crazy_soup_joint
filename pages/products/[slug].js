@@ -15,6 +15,7 @@ const Product = ({ product }) => {
       </Head>
       <h3>{product.name}</h3>
       <Image
+        intrinsic
         width={300}
         src={fromImageToUrl(product.image)}
         alt="image product"
