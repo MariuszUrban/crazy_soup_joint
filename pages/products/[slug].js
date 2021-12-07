@@ -14,7 +14,11 @@ const Product = ({ product }) => {
         )}
       </Head>
       <h3>{product.name}</h3>
-      <Image src={fromImageToUrl(product.image)} alt="image product" />
+      <Image
+        width={300}
+        src={fromImageToUrl(product.image)}
+        alt="image product"
+      />
       <h3>{product.name}</h3>
       <p>
         ${twoDecimals(product.price)} <BuyButton product={product} />

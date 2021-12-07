@@ -1,9 +1,9 @@
-import Head from 'next/head';
-import Link from 'next/link';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
-import { fromImageToUrl, API_URL } from '../utils/urls';
-import { twoDecimals } from '../utils/format';
+import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+import { fromImageToUrl, API_URL } from "../utils/urls";
+import { twoDecimals } from "../utils/format";
 
 export default function Home({ products }) {
   return (
@@ -21,6 +21,7 @@ export default function Home({ products }) {
                 <div className={styles.product__Row}>
                   <div className={styles.product__ColImg}>
                     <Image
+                      width={100}
                       src={fromImageToUrl(product.image)}
                       alt="image of a soup"
                     />
