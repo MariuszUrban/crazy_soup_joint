@@ -19,13 +19,12 @@ export default function Home({ products }) {
             <Link href={`/products/${product.slug}`}>
               <a>
                 <div className={styles.product__Row}>
-                  <div className={styles.product__ColImg}>
-                    <Image
-                      width={100}
-                      src={product.image.url}
-                      alt="image of a soup"
-                    />
-                  </div>
+                  <Image
+                    width={100}
+                    src={product.image.url}
+                    alt="image of a soup"
+                  />
+
                   <div className={styles.product__Col}>
                     <h1> {product.name}</h1>
                     <h2>$ {twoDecimals(product.price)}</h2>

@@ -14,12 +14,7 @@ const Product = ({ product }) => {
         )}
       </Head>
       <h3>{product.name}</h3>
-      <Image
-        intrinsic
-        width={300}
-        loader={fromImageToUrl(product.image)}
-        alt="image product"
-      />
+      <Image intrinsic width={300} src={product.image} alt="image product" />
       <h3>{product.name}</h3>
       <p>
         ${twoDecimals(product.price)} <BuyButton product={product} />
