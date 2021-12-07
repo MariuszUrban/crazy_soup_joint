@@ -19,9 +19,8 @@ export default function Home({ products }) {
             <Link href={`/products/${product.slug}`}>
               <a>
                 <div className={styles.product__Row}>
-                  <Image
-                    width={100}
-                    src={product.image.url}
+                  <img
+                    src={fromImageToUrl(product.image)}
                     alt="image of a soup"
                   />
 
