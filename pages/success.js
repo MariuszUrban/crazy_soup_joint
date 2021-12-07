@@ -43,7 +43,7 @@ export default function Success() {
         <meta name="description" content="Thank you for your purchase" />
       </Head>
       <h2>Success!</h2>
-      {loading && <p>We're confirming your purchase!</p>}
+      {loading && <p>We&apos;re confirming your purchase!</p>}
       {order && <p>Your order is confirmed, with order number: {order.id} </p>}
     </div>
   );

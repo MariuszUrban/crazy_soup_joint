@@ -1,8 +1,8 @@
-import Head from 'next/head';
-import { fromImageToUrl, API_URL } from '../../utils/urls';
-import { twoDecimals } from '../../utils/format';
-import { BuyButton } from '../../components/BuyButton';
-
+import Head from "next/head";
+import Image from "next/image";
+import { fromImageToUrl, API_URL } from "../../utils/urls";
+import { twoDecimals } from "../../utils/format";
+import { BuyButton } from "../../components/BuyButton";
 
 const Product = ({ product }) => {
   return (
@@ -14,9 +14,11 @@ const Product = ({ product }) => {
         )}
       </Head>
       <h3>{product.name}</h3>
-      <img src={fromImageToUrl(product.image)} alt="image product" />
+      <Image src={fromImageToUrl(product.image)} alt="image product" />
       <h3>{product.name}</h3>
-      <p>${twoDecimals(product.price)} <BuyButton product={product}/></p>
+      <p>
+        ${twoDecimals(product.price)} <BuyButton product={product} />
+      </p>
       <p>{product.content}</p>
     </div>
   );
